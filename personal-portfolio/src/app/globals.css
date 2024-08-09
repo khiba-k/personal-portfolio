@@ -1,0 +1,202 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: black;
+  height: 100vh;
+}
+
+/* Intro Section */
+.intro-col {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-row {
+  height: 10%;
+}
+
+.navbar {
+  background: rgba(42, 43, 56, 0.5);
+  border: 2px solid #2a2b37;
+  border-radius: 10px; /* Curved edges */
+  padding: 10px 20px;
+  margin: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 700px;
+  justify-content: center;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-links li {
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px; /* Rounded corners for links */
+  transition: background-color 0.3s;
+  justify-content: space-around;
+}
+
+.nav-links a:hover {
+  background-color: #555; /* Background color on hover */
+}
+
+.intro-row {
+  height: 80%;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  flex-direction: row;
+}
+
+.side-col {
+  width: 10%;
+}
+
+.middle-col {
+  flex-direction: column;
+  /* border: 1px solid white; */
+  width: 80%;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.middle-col::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+.about-row {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: row;
+  /* overflow-y: scroll; */
+  height: 100%;
+}
+
+.p.col {
+  width: 50%; 
+}
+
+.intro-p {
+  color: white;
+  font-size: 65px;
+  width: 700px;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-family: sans-serif;  
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.p2-col{
+  width: 60%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.headshot-row {
+  padding-top: 50px;
+  height: 56%;
+  display: flex;
+  justify-content: center;  
+
+}
+
+.skills {
+  
+  height: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+/* .jobs-row{
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  border: 1px solid white;
+  width: 100%;
+  color: white;
+} */
+
+/* .about-row {
+  height: 36%;
+  display: flex;
+  align-items: flex-end;
+} */
+
+
+
+/* 
+.creation-span {
+  animation: colorTransition 12s infinite;
+} */
+
+@keyframes colorTransition {
+  0% {
+    color: #ff0066; /* Pinkish color */
+  }
+  50% {
+    color: skyblue; /* Sky blue color */
+  }
+  100% {
+    color: #ff0066; /* Back to pinkish color */
+  }
+}
+
+
+.concept-span {
+  display: inline-block;
+}
+
+.creation-span {
+  display: inline-block;
+  animation: colorTransition 8s infinite;
+}
+
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+} */
