@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <main>
         {/* Intro Section */}
-        <section style={{border: "1px solid white"}}>
+        <section>
           <div className="intro-col">
             {/* Navbar Row */}
             <div className="nav-row">
