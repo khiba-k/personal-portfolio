@@ -13,6 +13,11 @@ import CSSI from '../assets/CSSIcon.png'
 // import CI from '../assets/CIcon.png'
 import FigmaI from '../assets/FigmaIcon.png'
 import GoogleI from '../assets/GoogleIcon.png'
+import GitHub from '../assets/github.png'
+import LinkedIn from '../assets/linkedin.png'
+import Upwork from '../assets/upwork.png'
+import Facebook from '../assets/facebook.png'
+import X from '../assets/twitter.png'
 
 const Intro = () => {
     return (
@@ -62,7 +67,13 @@ const Intro = () => {
                 </div>
             </div>
             {/* Side Col */}
-            <div className="side-col"></div>
+            <div className="side-col socials">
+                {/* <Image style={{width: "34px", border: "1px solid white"}} src={GitHub} alt="My Git Hub"/>
+                <Image style={{width: "34px", border: "1px solid white"}} src={LinkedIn} alt="My Git Hub"/> */}
+                <Image style={{width: "34px", border: "1px solid white"}} src={Upwork} alt="My Git Hub"/>
+                <Image style={{width: "34px", border: "1px solid white"}} src={Facebook} alt="My Git Hub"/>
+                <Image style={{width: "34px", border: "1px solid white"}} src={X} alt="My Git Hub"/>
+            </div>
         </>
     )
 }
