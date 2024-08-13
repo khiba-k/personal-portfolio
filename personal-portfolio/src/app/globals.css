@@ -332,6 +332,7 @@ body {
 
 }
 
+/* Max width less than 1410px */
 @media (max-width: 1410px) {
   .side-col {
     width: 7%;
@@ -343,7 +344,6 @@ body {
 
   .p-col {
     width: 45%;
-    border: 1px solid blue;
   }
 
   .p2-col {
@@ -380,4 +380,26 @@ body {
     border: 1px solid skyblue;
     border-radius: 50%;
   }
+}
+
+@media (max-height: 712px) {
+  
+  .intro-p {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  
+  .headshot-row {
+    padding-top: 88px;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+  }
+  .skills {
+    height: 25%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+  }
+
 }

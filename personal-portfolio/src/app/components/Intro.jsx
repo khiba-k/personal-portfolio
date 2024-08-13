@@ -28,15 +28,15 @@ const Intro = () => {
             <div className="middle-col">
                 {/* About Row */}
                 <div id="intro" className='about-col'>
-                    <div className='upper-row' style={{border: "1px solid white"}}>
-                        <div className="p-col" style={{border: "1px solid white"}}>
+                    <div className='upper-row'>
+                        <div className="p-col">
                             <p className="intro-p">
                                 from concept to{" "}
                                 <span className="creation-span">creation</span>
                             </p>
                             <p className="hello-world">Hello World! I’m Khiba Koenane, a visionary full-stack developer from Southern Africa, specializing in crafting seamless, innovative web solutions. Let’s turn your vision into reality with cutting-edge technology and expert design.</p>
                         </div>
-                        <div className="p2-col" style={{border: "1px solid white"}}>
+                        <div className="p2-col">
                             {/* Headshot Row */}
                             <div className='headshot-row'>
                                 <Image src={photo} className="headshot" alt='professional photo' />
