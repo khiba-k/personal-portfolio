@@ -17,7 +17,7 @@ import GitHub from '../assets/github.png'
 import LinkedIn from '../assets/linkedin.png'
 import Upwork from '../assets/upwork.png'
 import Facebook from '../assets/facebook.png'
-import X from '../assets/twitter.png'
+import twitter from '../assets/twitter.png'
 
 const Intro = () => {
     return (
@@ -27,23 +27,23 @@ const Intro = () => {
             {/* Middle Col */}
             <div className="middle-col">
                 {/* About Row */}
-                <div className='about-col'>
-                    <div className='upper-row'>
-                        <div className="p-col">
+                <div id="intro" className='about-col'>
+                    <div className='upper-row' style={{border: "1px solid white"}}>
+                        <div className="p-col" style={{border: "1px solid white"}}>
                             <p className="intro-p">
                                 from concept to{" "}
                                 <span className="creation-span">creation</span>
                             </p>
-                            <p style={{ color: "white", width: "600px" }}>Hello World! I’m Khiba Koenane, a visionary full-stack developer from Southern Africa, specializing in crafting seamless, innovative web solutions. Let’s turn your vision into reality with cutting-edge technology and expert design.</p>
+                            <p className="hello-world">Hello World! I’m Khiba Koenane, a visionary full-stack developer from Southern Africa, specializing in crafting seamless, innovative web solutions. Let’s turn your vision into reality with cutting-edge technology and expert design.</p>
                         </div>
-                        <div className="p2-col">
+                        <div className="p2-col" style={{border: "1px solid white"}}>
                             {/* Headshot Row */}
                             <div className='headshot-row'>
-                                <Image src={photo} style={{ height: "280px", width: "280px", borderRadius: "50%" }} alt='professional photo' />
+                                <Image src={photo} className="headshot" alt='professional photo' />
                             </div>
                             {/* Skills Row */}
                             <div className='skills'>
-                                <p style={{ fontFamily: "sans-serif", fontWeight: "bold", fontSize: "20px" }}>Khiba Koenane, <span style={{ color: "#FF0066" }}>Web Developer | </span>  <span style={{ color: "#9C3D9B" }}>Software Developer | </span> <span style={{ color: "skyblue" }}>IoT Developer</span></p>
+                                <p className="khiba" >Khiba Koenane, <span style={{ color: "#FF0066" }}>Web Developer | </span>  <span style={{ color: "#9C3D9B" }}>Software Developer | </span> <span style={{ color: "skyblue" }}>IoT Developer</span></p>
                             </div>
                         </div>
                     </div>
@@ -68,11 +68,11 @@ const Intro = () => {
             </div>
             {/* Side Col */}
             <div className="side-col socials">
-                {/* <Image style={{width: "34px", border: "1px solid white"}} src={GitHub} alt="My Git Hub"/>
-                <Image style={{width: "34px", border: "1px solid white"}} src={LinkedIn} alt="My Git Hub"/> */}
-                <Image style={{width: "34px", border: "1px solid white"}} src={Upwork} alt="My Git Hub"/>
-                <Image style={{width: "34px", border: "1px solid white"}} src={Facebook} alt="My Git Hub"/>
-                <Image style={{width: "34px", border: "1px solid white"}} src={X} alt="My Git Hub"/>
+                <a href="https://github.com/khiba-k" target="_blank"><Image className='social-icons' src={GitHub} alt="My Git Hub"/></a>
+                <a href="https://www.linkedin.com/in/khiba-koenane-6477652a3/" target="_blank"><Image className='social-icons' src={LinkedIn} alt="My Git Hub"/></a>
+                <a href="https://www.upwork.com/freelancers/~018682ade592de44ad" target="_blank"><Image className='social-icons' src={Upwork} alt="My Git Hub"/></a>
+                <a href="https://www.facebook.com/khiba.koenane.1" target="_blank"><Image className='social-icons' src={Facebook} alt="My Git Hub"/></a>
+                <a href="https://x.com/KhibaKoenane" target="_blank"><Image className='social-icons' src={twitter} alt="My Git Hub"/></a>
             </div>
         </>
     )

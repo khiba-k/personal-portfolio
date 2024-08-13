@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: black;
   height: 100vh;
@@ -121,11 +125,17 @@ body {
   padding-bottom: 100px;
 }
 
+.hello-world {
+  color: white;
+  width: 500px;
+}
+
 .p2-col {
   width: 50%;
   color: white;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .headshot-row {
@@ -134,6 +144,18 @@ body {
   display: flex;
   justify-content: center;
   padding-top: 100px;
+}
+
+.headshot {
+  height: 280px;
+  width: 280px;
+  border-radius: 50%;
+}
+
+.khiba {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .skills {
@@ -213,7 +235,6 @@ body {
   border-radius: 40px;
 }
 
-
 .lan {
   width: 355px;
   height: 100%;
@@ -231,8 +252,16 @@ body {
 .socials {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
+}
+
+.social-icons {
+  width: 48px;
+  height: 48px;
+  margin-top: 16px;
+  border: 1px solid skyblue;
+  border-radius: 50%;
 }
 
 /* .about-row {
@@ -267,32 +296,88 @@ body {
   animation: colorTransition 8s infinite;
 }
 
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* Max width less than 1691px */
+@media (min-width: 1411px) and (max-width: 1694px) {
+  .intro-p {
+    font-size: 56px;
+    width: 600px;
+  }
+
+  .hello-world {
+    color: white;
+    width: 450px;
+    font-size: 14px;
+  }
+
+  .headshot {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+  }
+
+  .khiba {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .social-icons {
+    width: 36px;
+    height: 36px;
+    margin-top: 16px;
+    border: 1px solid skyblue;
+    border-radius: 50%;
+  }
+
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@media (max-width: 1410px) {
+  .side-col {
+    width: 7%;
+  }
+
+  .middle-col {
+    width: 86%;
+  }
+
+  .p-col {
+    width: 45%;
+    border: 1px solid blue;
+  }
+
+  .p2-col {
+    width: 55%; 
+  }
+
+  .intro-p {
+    font-size: 56px;
+    width: 600px;
+  }
+
+  .hello-world {
+    color: white;
+    width: 450px;
+    font-size: 14px;
+  }
+
+  .headshot {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+  }
+
+  .khiba {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .social-icons {
+    width: 36px;
+    height: 36px;
+    margin-top: 16px;
+    border: 1px solid skyblue;
+    border-radius: 50%;
   }
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-} */

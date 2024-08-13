@@ -7,8 +7,8 @@ import TKT from '../assets/SmartTraffic.jpg'
 const Projects = () => {
     return (
         <>
-            <div className='projects-row'>
-                <h1 style={{ fontSize: "44px", fontWeight: "bold", padding: "10px", height: "20%" }}>projects</h1>
+            <div id="projects" className='projects-row'>
+                <h1 className="creation-span" style={{ fontSize: "44px", fontWeight: "bold", padding: "10px", height: "20%" }}>projects</h1>
                 <div className='projects-col'>
                     <div className='project-card'>
                         <div style={{ width: "10%", height: "400px" }}><p className='lan'>HTML | CSS | JS | Python</p></div>
