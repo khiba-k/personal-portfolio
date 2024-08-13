@@ -59,20 +59,21 @@ const Intro = () => {
                         <Image src={BootI} style={{ width: "42px", height: "42px" }} alt="python" />&nbsp;
                         <Image src={CSSI} style={{ width: "42px", height: "42px" }} alt="python" />&nbsp;
                         <Image src={FigmaI} style={{ width: "42px", height: "42px" }} alt="python" />&nbsp;
-                        <Image src={GoogleI} style={{ width: "42px", height: "42px" }} alt="python" /></div>
+                        <Image src={GoogleI} style={{ width: "42px", height: "42px" }} alt="python" />
+                    </div>
                 </div>
                 {/* Projects Row */}
                 <div>
-                    <Projects/>
+                    <Projects />
                 </div>
             </div>
             {/* Side Col */}
             <div className="side-col socials">
-                <a href="https://github.com/khiba-k" target="_blank"><Image className='social-icons' src={GitHub} alt="My Git Hub"/></a>
-                <a href="https://www.linkedin.com/in/khiba-koenane-6477652a3/" target="_blank"><Image className='social-icons' src={LinkedIn} alt="My Git Hub"/></a>
-                <a href="https://www.upwork.com/freelancers/~018682ade592de44ad" target="_blank"><Image className='social-icons' src={Upwork} alt="My Git Hub"/></a>
-                <a href="https://www.facebook.com/khiba.koenane.1" target="_blank"><Image className='social-icons' src={Facebook} alt="My Git Hub"/></a>
-                <a href="https://x.com/KhibaKoenane" target="_blank"><Image className='social-icons' src={twitter} alt="My Git Hub"/></a>
+                <a href="https://github.com/khiba-k" target="_blank"><Image className='social-icons' src={GitHub} alt="My Git Hub" /></a>
+                <a href="https://www.linkedin.com/in/khiba-koenane-6477652a3/" target="_blank"><Image className='social-icons' src={LinkedIn} alt="My Git Hub" /></a>
+                <a href="https://www.upwork.com/freelancers/~018682ade592de44ad" target="_blank"><Image className='social-icons' src={Upwork} alt="My Git Hub" /></a>
+                <a href="https://www.facebook.com/khiba.koenane.1" target="_blank"><Image className='social-icons' src={Facebook} alt="My Git Hub" /></a>
+                <a href="https://x.com/KhibaKoenane" target="_blank"><Image className='social-icons' src={twitter} alt="My Git Hub" /></a>
             </div>
         </>
     )
