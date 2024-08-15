@@ -13,13 +13,9 @@ import CSSI from '../assets/CSSIcon.png'
 // import CI from '../assets/CIcon.png'
 import FigmaI from '../assets/FigmaIcon.png'
 import GoogleI from '../assets/GoogleIcon.png'
-import GitHub from '../assets/github.png'
-import LinkedIn from '../assets/linkedin.png'
-import Upwork from '../assets/upwork.png'
-import Facebook from '../assets/facebook.png'
-import twitter from '../assets/twitter.png'
+import SocialMedia from './SocialMedia'
 
-const Intro = () => {
+const Main = () => {
     return (
         <>
             {/* Side Col */}
@@ -27,7 +23,7 @@ const Intro = () => {
             {/* Middle Col */}
             <div className="middle-col">
                 {/* About Row */}
-                <div id="intro" className='about-col'>
+                <div id="intro" className='about-row'>
                     <div className='upper-row'>
                         <div className="p-col">
                             <p className="intro-p">
@@ -63,20 +59,16 @@ const Intro = () => {
                     </div>
                 </div>
                 {/* Projects Row */}
-                <div>
+                <div className="projects-row-wrapper">
                     <Projects />
                 </div>
             </div>
             {/* Side Col */}
             <div className="side-col socials">
-                <a href="https://github.com/khiba-k" target="_blank"><Image className='social-icons' src={GitHub} alt="My Git Hub" /></a>
-                <a href="https://www.linkedin.com/in/khiba-koenane-6477652a3/" target="_blank"><Image className='social-icons' src={LinkedIn} alt="My Git Hub" /></a>
-                <a href="https://www.upwork.com/freelancers/~018682ade592de44ad" target="_blank"><Image className='social-icons' src={Upwork} alt="My Git Hub" /></a>
-                <a href="https://www.facebook.com/khiba.koenane.1" target="_blank"><Image className='social-icons' src={Facebook} alt="My Git Hub" /></a>
-                <a href="https://x.com/KhibaKoenane" target="_blank"><Image className='social-icons' src={twitter} alt="My Git Hub" /></a>
+                <SocialMedia />
             </div>
         </>
     )
 }
 
-export default Intro
+export default Main

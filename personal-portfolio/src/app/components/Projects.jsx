@@ -8,7 +8,7 @@ const Projects = () => {
     return (
         <>
             <div id="projects" className='projects-row'>
-                <h1 className="creation-span" style={{ fontSize: "44px", fontWeight: "bold", padding: "10px", height: "20%" }}>projects</h1>
+                <h1 className="creation-span" style={{ fontSize: "44px", fontWeight: "bold", padding: "5px", height: "16%" }}>projects</h1>
                 <div className='projects-col'>
                     <div className='project-card'>
                         <div style={{ width: "10%", height: "400px" }}><p className='lan'>HTML | CSS | JS | Python</p></div>
