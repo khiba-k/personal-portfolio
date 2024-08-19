@@ -14,6 +14,7 @@ import CSSI from '../assets/CSSIcon.png'
 import FigmaI from '../assets/FigmaIcon.png'
 import GoogleI from '../assets/GoogleIcon.png'
 import SocialMedia from './SocialMedia'
+import "../styles/AboutRow.css"
 
 const Main = () => {
     return (
@@ -27,7 +28,7 @@ const Main = () => {
                     <div className='upper-row'>
                         <div className="p-col">
                             <p className="intro-p">
-                                from concept to{" "}
+                                from concept to {" "}
                                 <span className="creation-span">creation</span>
                             </p>
                             <p className="hello-world">Hello World! I’m Khiba Koenane, a visionary full-stack developer from Southern Africa, specializing in crafting seamless, innovative web solutions. Let’s turn your vision into reality with cutting-edge technology and expert design.</p>
@@ -45,17 +46,17 @@ const Main = () => {
                     </div>
                     {/* Language and Tools Row */}
                     <div className='lower-row'>
-                        <p style={{ color: "white" }}>Yeah, I'm Multilingual and Handy With The Tools: &nbsp;</p>
-                        <Image src={PythonI} style={{ width: "42px", height: "42px" }} alt="python" />&nbsp;
-                        <Image src={NxtI} style={{ width: "42px", height: "42px" }} alt="python" />&nbsp;
-                        <Image src={ReactI} style={{ width: "42px", height: "42px" }} alt="python" />&nbsp;
-                        <Image src={JscriptI} style={{ width: "42px", height: "42px" }} alt="python" />&nbsp;
-                        <Image src={HTMLI} style={{ width: "42px", height: "42px" }} alt="python" />&nbsp;
-                        <Image src={TailI} style={{ width: "42px", height: "42px" }} alt="python" />&nbsp;
-                        <Image src={BootI} style={{ width: "42px", height: "42px" }} alt="python" />&nbsp;
-                        <Image src={CSSI} style={{ width: "42px", height: "42px" }} alt="python" />&nbsp;
-                        <Image src={FigmaI} style={{ width: "42px", height: "42px" }} alt="python" />&nbsp;
-                        <Image src={GoogleI} style={{ width: "42px", height: "42px" }} alt="python" />
+                        <p className='lower-p'>Yeah, I'm Multilingual and Handy With The Tools: &nbsp;</p>
+                        <Image src={PythonI} className='language-icons' alt="python" />&nbsp;
+                        <Image src={NxtI} className='language-icons' alt="python" />&nbsp;
+                        <Image src={ReactI} className='language-icons' alt="python" />&nbsp;
+                        <Image src={JscriptI} className='language-icons' alt="python" />&nbsp;
+                        <Image src={HTMLI} className='language-icons' alt="python" />&nbsp;
+                        <Image src={TailI} className='language-icons' alt="python" />&nbsp;
+                        <Image src={BootI} className='language-icons' alt="python" />&nbsp;
+                        <Image src={CSSI} className='language-icons' alt="python" />&nbsp;
+                        <Image src={FigmaI} className='language-icons' alt="python" />&nbsp;
+                        <Image src={GoogleI} className='language-icons' alt="python" />
                     </div>
                 </div>
                 {/* Projects Row */}

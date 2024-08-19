@@ -1,12 +1,10 @@
 import NavBar from "./components/NavBar";
-import Intro from "./components/Intro";
+import Main from "./components/Main";
 
 export default function Home() {
   return (
     <>
       <main>
-        {/* Intro Section */}
-        <section>
           <div className="intro-col">
             {/* Navbar Row */}
             <div className="nav-row">
@@ -14,15 +12,9 @@ export default function Home() {
             </div>
             {/* Contents Row */}
             <div className="intro-row">
-              <Intro/>
+              <Main/>
           </div>
           </div>
-        </section>
-        {/* <section>
-          <div>
-            <p style={{cololr:"white"}}>Projects</p>
-          </div>
-        </section> */}
       </main>
     </>
   );

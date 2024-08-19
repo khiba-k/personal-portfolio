@@ -30,14 +30,6 @@ const Projects = () => {
                             <a href='https://github.com/THATONEKO/INTELLIGENT-TRAFFIC-SYSTEM-1-/tree/main'> <Image style={{ width: "48px", height: "48px" }} src={github} alt="git hub icon" /> </a>
                         </div>
                     </div>
-                    {/* <div className='project-card'>
-                        <div style={{ width: "10%", height: "400px" }}><p className='lan'>ReactJS | CSS | Bootstrap | Python</p></div>
-                        <div className="card-img" style={{ border: "1px solid gold", width: "45%", borderRadius: "60px" }}></div>
-                        <div className="card-content">
-                            <div style={{ fontSize: "48px", fontWeight: "bold", fontFamily: "sans-serif", color: "skyblue" }}>HBnB</div>
-                            <a href='https://github.com/khiba-k/holbertonschool-hbnb-client'> <Image style={{ width: "48px", height: "48px" }} src={github} alt="git hub icon" /> </a>
-                        </div>
-                    </div> */}
                 </div>
             </div>
         </>
