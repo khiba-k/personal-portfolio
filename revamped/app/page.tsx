@@ -3,6 +3,7 @@ import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-w
 import NavBar from "@/ui/NavBar";
 import HeroText from "@/ui/HeroText";
 import SkillsSection from "@/ui/SkillsSection";
+import AboutSection from "@/ui/AboutSection";
 
 export default function Home() {
   return (
@@ -14,10 +15,15 @@ export default function Home() {
         <section id="#hero" className="text-white">
           <HeroText />
         </section>
-        <section className="text-white">
+        <section className="flex justify-center text-white">
           <SkillsSection />
         </section>
-        <section className="text-white">Header</section>
+        <div className="relative w-full my-0 h-52 bg-gradient-to-b from-black via-[#4169E1] to-black clip-path-wavy-top clip-path-wavy-bottom">
+          uieriureiurehu
+        </div>
+        <section className="text-white">
+          <AboutSection />
+        </section>
       </div>
     </BackgroundBeamsWithCollision>
   );
